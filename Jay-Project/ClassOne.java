@@ -7,27 +7,20 @@
  */
 public class ClassOne
 {
-    // instance variables - replace the example below with your own
-    private int x;
-
-    /**
-     * Constructor for objects of class ClassOne
-     */
-    public ClassOne()
     {
-        // initialise instance variables
-        x = 0;
+    int a = 5;
+    int b = 2;
+    int c = 1;
+    int d = -8;
     }
-
-    /**
-     * An example of a method - replace this comment with your own
-     *
-     * @param  y  a sample parameter for a method
-     * @return    the sum of x and y
-     */
-    public int sampleMethod(int y)
+}
+public class ClassOne
+{
+    public static void run() 
     {
-        // put your code here
-        return x + y;
+        if (a==5) {
+            System.out.println("SUCCESS");
+            
     }
+}
 }
