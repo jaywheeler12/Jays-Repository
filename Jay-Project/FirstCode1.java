@@ -8,27 +8,16 @@
 
 public class FirstCode1
 {
-
-    int i = 14;
-    int k = 6;
-    int a = 9;
-    int b = 20;
-
-    public void run() {
-        do {
-            System.out.println("TRUE");
-        } while (i < 15);  
-        do {
-            System.out.println("TRUE");
-        } while (k > 5);
-        do {
-            System.out.println("TRUE");
-        } while (a < 10 && b <= 20);
-    }
-
     public static void main(String[] args)
-    {        
-        FirstCode1 hw = new FirstCode1();
-        hw.run();
+    {    
+       for (int i = 1; i <= 100; i++) {
+           if ((i%3) == 0) {
+               System.out.println("Fizz");
+           }else if ((i%5) == 0){
+               System.out.println("Buzz");
+           }else{
+               System.out.println(i);
+           }
+       }
     }
 }
