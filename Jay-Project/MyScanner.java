@@ -7,7 +7,7 @@ public class MyScanner
         while (true) {
             if (scanner.hasNext()) {
                 String str = scanner.next();
-                System.out.println(str*3);
+                System.out.println(str);
             }
     }
 }
