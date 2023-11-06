@@ -7,7 +7,10 @@ public class MyScanner
         while (true) {
             if (scanner.hasNext()) {
                 String str = scanner.next();
-                System.out.println(str);
+                String[] strr = str.split(",");
+                for (String Finish : strr) {
+                System.out.println(Finish);
+            }
             }
     }
 }
