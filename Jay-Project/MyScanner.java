@@ -1,22 +1,25 @@
 import java.util.Scanner;
-
+import java.io.File;
+import java.io.FileNotFoundException;
 public class MyScanner
 {
-    public void run() {
-        Scanner scanner = new Scanner(System.in);
-        while (true) {
-            if (scanner.hasNext()) {
-                String str = scanner.next();
-                String[] strr = str.split(",");
-                for (String Finish : strr) {
-                System.out.println(Finish);
-            }
-            }
-    }
+    public void run() throws FileNotFoundException {
+        File dataFile = new File("TestScoresBtClass.csv");
+        Scanner scanner = new Scanner (dataFile);
+        scanner.useDelimiter("\n");
+        while (scanner.hasNext()) {
+            String line = scanner.nextLine();
+            System.out.println(line);
+        }
+    
 }
     
     public static void main(String[] args) {
-        MyScanner myScanner = new MyScanner();
-        myScanner.run();
-    }
+       try {
+           ScannerReadCSVFile srCsv = new ScannerReadCSVFile();
+           srCsv.run();
+        } catch (Exception e) {
+            System.out.println("File not found");
+        }
+}
 }
