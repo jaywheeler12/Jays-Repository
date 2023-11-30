@@ -15,7 +15,7 @@ public class PDA
      */
     public PDA()
     {
-        // We don't need to do anything in the constructor for
+        
         // our program.
     }
 
@@ -24,17 +24,20 @@ public class PDA
      */
     public void runEventLoop() {
         int age;
+        int Minor = 18;
         Scanner scanner =new Scanner(System.in);
-        int LOWER_BOUND = 18;
+        int LOWER_BOUND = 0;
         while (true) {
             System.out.println("How old are you?");
             try {
                 age = scanner.nextInt();
-                System.out.println(age);
                 if (age < LOWER_BOUND) {
-                    System.out.println(age+" is too young!!");
-                } else {
-                    System.out.println("Computations go here");                
+                    System.out.println(Math.round(age)+" is not possible, please enter your real age.");
+                } else if (age < Minor) {
+                    System.out.println(Math.round(age)+" is too young!");
+                } else{
+                    System.out.println("Computations go here");
+
                 }
 
             } catch (InputMismatchException error) {
