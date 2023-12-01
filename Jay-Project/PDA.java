@@ -32,11 +32,13 @@ public class PDA
             try {
                 age = scanner.nextInt();
                 if (age < LOWER_BOUND) {
-                    System.out.println(Math.round(age)+" is not possible, please enter your real age.");
+                    System.out.println((age)+" is not possible, please enter your real age.");
                 } else if (age < Minor) {
-                    System.out.println(Math.round(age)+" is too young!");
+                    System.out.println((age)+" is too young!");
                 } else{
-                    System.out.println("Computations go here");
+                    int max = Math.round(age-7)*2;
+                    int min = Math.round(age/2+age%2)+7;
+                    System.out.println(age+" goes from "+min+" to "+max);
 
                 }
 
