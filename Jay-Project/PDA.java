@@ -24,7 +24,7 @@ public class PDA
      */
     public void runEventLoop() {
         int age;
-        int Minor = 18;
+        int Minor = 14;
         Scanner scanner =new Scanner(System.in);
         int LOWER_BOUND = 0;
         while (true) {
